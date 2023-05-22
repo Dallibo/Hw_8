@@ -1,0 +1,75 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #dddddd;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1000px;
+    min-width: 650px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+.tab {
+    padding: 10px 30px;
+    background-color: #686868;
+    border: 1px solid #4d4d4d;
+    color: white;
+    border-bottom: none;
+    cursor: pointer;
+}
+.tab:hover{
+    background-color: #4d4d4d;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+}
+.block {
+    flex: 1;
+    color: white;
+    background-color: #5c5c5c;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.block:last-child {
+    margin-right: 0;
+}
+.block img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.block h2 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.block p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+.content {
+    display: none;
+}
+.tabs:hover + .content {
+    display: flex;
+}
